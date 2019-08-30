@@ -19,9 +19,11 @@ with open(csv_path, newline='') as csv_file:
     for row in csv_reader:
         total_votes_cast += 1
         if row[2] in votes_per_candidates.keys():
+            #incement existing candidate's vote count
             votes_per_candidates[row[2]] += 1
         else:
-            votes_per_candidates[row[2]] =  0
+            #add new candidate and increment by 1
+            votes_per_candidates[row[2]] =  1
 
     print("-------------------------")
     print("Election Results!!!")
