@@ -42,7 +42,7 @@ with open(csv_path, newline='') as csv_file:
 
         last_value = int(row[1])
 
-    average_change = round( total_change / (total_months-1), 3)
+    average_change = round( total_change / (total_months-1), 2)
 print("----------------------------")
 print("Financial Analysis")
 print("----------------------------")
